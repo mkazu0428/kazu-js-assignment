@@ -12,7 +12,7 @@ let country = "Japan"
 
 q4 = `
 
-let japan
+const japan = {id: 1,capital: "東京"}japan.lang = "日本語"
 
 
 `;
