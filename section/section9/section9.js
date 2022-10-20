@@ -27,27 +27,9 @@ const fixData = (hikisuu) => {
       }
     });
     userIdAndDatas.datas = datas;
-    //return userIdAndDatas;=>　一人分のデータを出力
     listOfIdAndDatas.push(userIdAndDatas);
   });
   return listOfIdAndDatas;
 };
 
 module.exports = { userIdList, fixData };
-
-//これは一つの{userId:???,datas:[{}{}......]}を表示するプログラム
-/*et x = (id) => {
-    let userIdAndDatas = { userId: id };
-    const datas = [];
-    finaltest.forEach((obj) => {
-      if (obj.userId === id) {
-        datas.push(obj);
-        delete obj.userId;
-      }
-    });
-    userIdAndDatas.datas = datas;
-    return userIdAndDatas;
-  };
-  
-  console.log(x(123456)):
-  */
